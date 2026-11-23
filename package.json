@@ -1,0 +1,58 @@
+{
+  "name": "invoice-kit",
+  "version": "1.0.0",
+  "description": "Make professional invoices in Node.js or the browser: line discounts, sales tax by rate, shipping, advance payments, lakh/crore formatting, amount in words (English + Urdu), and a print-ready A4 HTML template for PDF. Plus a CLI.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "bin": {
+    "invoice-kit": "bin/invoice-kit.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "invoice",
+    "invoice-generator",
+    "billing",
+    "sales-tax",
+    "receipt",
+    "pdf",
+    "accounting",
+    "pakistan",
+    "pkr",
+    "lakh",
+    "amount-in-words",
+    "urdu"
+  ],
+  "author": "mubasher1111",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mubasher1111/invoice-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mubasher1111/invoice-kit/issues"
+  },
+  "homepage": "https://zexcart.site/invoice-kit/",
+  "engines": {
+    "node": ">=18.3"
+  },
+  "dependencies": {
+    "pakistan-toolkit": "^1.0.1",
+    "urdu-toolkit": "^1.0.0"
+  }
+}
