@@ -1,13 +1,13 @@
-# 🧾 invoice-kit
+# 🧾 pk-invoice
 
 **Make professional invoices in seconds, in Node.js, the browser, or from the command line.**
 Line discounts, sales tax by rate, shipping, advance payments, lakh/crore formatting, amount in words in English and Urdu, and a clean A4 template that prints straight to PDF.
 
-[![Tests](https://github.com/mubasher1111/invoice-kit/actions/workflows/test.yml/badge.svg)](https://github.com/mubasher1111/invoice-kit/actions/workflows/test.yml)
-[![npm](https://img.shields.io/npm/v/invoice-kit)](https://www.npmjs.com/package/invoice-kit)
+[![Tests](https://github.com/mubasher1111/pk-invoice/actions/workflows/test.yml/badge.svg)](https://github.com/mubasher1111/pk-invoice/actions/workflows/test.yml)
+[![npm](https://img.shields.io/npm/v/pk-invoice)](https://www.npmjs.com/package/pk-invoice)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-🧮 **[Free online invoice maker](https://zexcart.site/invoice-kit/#invoice-maker)**: no sign-up, nothing to install · 📖 **[Full guide](https://zexcart.site/invoice-kit/)**
+🧮 **[Free online invoice maker](https://zexcart.site/pk-invoice/#invoice-maker)**: no sign-up, nothing to install · 📖 **[Full guide](https://zexcart.site/pk-invoice/)**
 
 ---
 
@@ -23,25 +23,25 @@ Line discounts, sales tax by rate, shipping, advance payments, lakh/crore format
 ## Quick start (command line)
 
 ```bash
-npx invoice-kit --example > invoice.json     # a sample invoice to edit
-npx invoice-kit invoice.json -o invoice.html # make the invoice
+npx pk-invoice --example > invoice.json     # a sample invoice to edit
+npx pk-invoice invoice.json -o invoice.html # make the invoice
 ```
 
 Open `invoice.html` in your browser and choose **Print → Save as PDF**.
 
 ```
-npx invoice-kit invoice.json --totals        # just the numbers, as JSON
-npx invoice-kit --next INV-2026-0042         # → INV-2026-0043
+npx pk-invoice invoice.json --totals        # just the numbers, as JSON
+npx pk-invoice --next INV-2026-0042         # → INV-2026-0043
 ```
 
 ## Library
 
 ```bash
-npm install invoice-kit
+npm install pk-invoice
 ```
 
 ```js
-import { calculateInvoice, renderInvoiceHTML } from 'invoice-kit';
+import { calculateInvoice, renderInvoiceHTML } from 'pk-invoice';
 
 const invoice = {
   number: 'INV-2026-0042',
@@ -97,7 +97,7 @@ In the browser, put the HTML in an iframe or a new window and call `print()` to 
 
 ## Note on tax
 
-invoice-kit calculates and prints the fields a sales tax invoice usually needs, but it does **not** connect to FBR's digital invoicing system, and it is not tax advice. Check the current rules for your business with FBR or your tax adviser.
+pk-invoice calculates and prints the fields a sales tax invoice usually needs, but it does **not** connect to FBR's digital invoicing system, and it is not tax advice. Check the current rules for your business with FBR or your tax adviser.
 
 ## License
 

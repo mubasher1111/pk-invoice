@@ -1,4 +1,4 @@
-// Type definitions for invoice-kit
+// Type definitions for pk-invoice
 
 export interface Party {
   name?: string;

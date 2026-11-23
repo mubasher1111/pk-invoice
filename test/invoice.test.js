@@ -106,8 +106,8 @@ test('html template escapes user text and blocks unsafe images', () => {
 });
 
 test('cli', () => {
-  const bin = fileURLToPath(new URL('../bin/invoice-kit.js', import.meta.url));
-  const dir = mkdtempSync(join(tmpdir(), 'invoice-kit-'));
+  const bin = fileURLToPath(new URL('../bin/pk-invoice.js', import.meta.url));
+  const dir = mkdtempSync(join(tmpdir(), 'pk-invoice-'));
   const example = execFileSync(process.execPath, [bin, '--example'], { encoding: 'utf8' });
   const file = join(dir, 'invoice.json');
   writeFileSync(file, example);

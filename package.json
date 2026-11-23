@@ -1,5 +1,5 @@
 {
-  "name": "invoice-kit",
+  "name": "pk-invoice",
   "version": "1.0.0",
   "description": "Make professional invoices in Node.js or the browser: line discounts, sales tax by rate, shipping, advance payments, lakh/crore formatting, amount in words (English + Urdu), and a print-ready A4 HTML template for PDF. Plus a CLI.",
   "type": "module",
@@ -12,7 +12,7 @@
     }
   },
   "bin": {
-    "invoice-kit": "bin/invoice-kit.js"
+    "pk-invoice": "bin/pk-invoice.js"
   },
   "files": [
     "bin",
@@ -42,12 +42,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mubasher1111/invoice-kit.git"
+    "url": "git+https://github.com/mubasher1111/pk-invoice.git"
   },
   "bugs": {
-    "url": "https://github.com/mubasher1111/invoice-kit/issues"
+    "url": "https://github.com/mubasher1111/pk-invoice/issues"
   },
-  "homepage": "https://zexcart.site/invoice-kit/",
+  "homepage": "https://zexcart.site/pk-invoice/",
   "engines": {
     "node": ">=18.3"
   },

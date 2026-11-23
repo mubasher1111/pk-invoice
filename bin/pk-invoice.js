@@ -1,17 +1,17 @@
 #!/usr/bin/env node
-// invoice-kit CLI: turn an invoice JSON file into a print-ready HTML invoice.
+// pk-invoice CLI: turn an invoice JSON file into a print-ready HTML invoice.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
 import { renderInvoiceHTML, calculateInvoice, exampleInvoice, nextInvoiceNumber } from '../src/index.js';
 
 const HELP = `
-invoice-kit: make a professional invoice from a JSON file
+pk-invoice: make a professional invoice from a JSON file
 
 Usage:
-  npx invoice-kit --example > invoice.json     Create a sample invoice to edit
-  npx invoice-kit invoice.json -o invoice.html Make the invoice (open it, then Print -> Save as PDF)
-  npx invoice-kit invoice.json --totals        Only print the calculated totals
-  npx invoice-kit --next INV-2026-0042         Suggest the next invoice number
+  npx pk-invoice --example > invoice.json     Create a sample invoice to edit
+  npx pk-invoice invoice.json -o invoice.html Make the invoice (open it, then Print -> Save as PDF)
+  npx pk-invoice invoice.json --totals        Only print the calculated totals
+  npx pk-invoice --next INV-2026-0042         Suggest the next invoice number
 
 Options:
   -o, --out <file>   Output HTML file (default: <invoice number>.html)

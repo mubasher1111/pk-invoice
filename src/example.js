@@ -1,4 +1,4 @@
-// A complete example invoice, used by `invoice-kit --example` and the tests.
+// A complete example invoice, used by `pk-invoice --example` and the tests.
 export const exampleInvoice = {
   number: 'INV-2026-0042',
   date: '2026-11-24',
